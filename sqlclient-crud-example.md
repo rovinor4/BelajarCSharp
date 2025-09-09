@@ -1,3 +1,14 @@
+# sqlclient CRUD Example
+
+**Flow:**
+
+* Install `Microsoft.Data.SqlClient` NuGet package
+* Define connection string
+* Implement CRUD operations: Create, Read, Update, Delete
+* Prepare SQL table before running the program
+
+---
+
 ## 1. Install NuGet Package
 
 ```powershell
@@ -6,7 +17,7 @@ dotnet add package Microsoft.Data.SqlClient
 
 ---
 
-## 2. Contoh Lengkap CRUD
+## 2. Full CRUD Example
 
 ```csharp
 using System;
@@ -18,9 +29,9 @@ class Program
 
     static void Main()
     {
-        CreateData("Budi", "budi@example.com");
+        CreateData("John Doe", "john@example.com");
         ReadData();
-        UpdateData(1, "Budi Update", "budiupdate@example.com");
+        UpdateData(1, "John Updated", "johnupdated@example.com");
         DeleteData(1);
     }
 
@@ -97,9 +108,9 @@ class Program
 
 ---
 
-## 3. Catatan Penting
+## 3. Important Notes
 
-* Pastikan **database & tabel** `Users` sudah dibuat:
+* Ensure that the `Users` table exists before running the application:
 
 ```sql
 CREATE TABLE Users (
@@ -109,7 +120,5 @@ CREATE TABLE Users (
 );
 ```
 
-* Ganti `Server`, `Database`, `User Id`, dan `Password` sesuai konfigurasi lo.
-* `TrustServerCertificate=True;` dipakai buat ngilangin SSL warning di lokal.
-
----
+* Replace `Server`, `Database`, `User Id`, and `Password` in the connection string with your own configuration.
+* `TrustServerCertificate=True;` is used to bypass SSL certificate warnings in a local environment.
