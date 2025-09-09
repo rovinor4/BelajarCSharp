@@ -108,8 +108,3 @@ namespace CalculatorApp
   Operators: `+`, `-`, `×`, `÷`
   Equal: `=`
   Clear: `C`
-
----
-
-Kalau lo mau bro, gue bisa bikin **desain layout Windows Form-nya** juga dengan posisi button + kode `InitializeComponent()` biar tinggal copy-paste langsung jalan.
-Mau gue bikin sekalian?
