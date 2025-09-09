@@ -113,6 +113,3 @@ CREATE TABLE Users (
 * `TrustServerCertificate=True;` dipakai buat ngilangin SSL warning di lokal.
 
 ---
-
-Kalau mau, gue bisa bikinin **versi async** biar performanya lebih mantap dan cocok untuk Windows Forms atau WPF lo nanti.
-Mau gue buatin sekalian bro?
