@@ -93,7 +93,3 @@ private void btnSave_Click(object sender, EventArgs e)
     MessageBox.Show("Settings saved!");
 }
 ```
-
----
-
-Do you want me to now make a **same-format documentation** but for the **environment variable system** so your docs have both JSON and ENV methods?
